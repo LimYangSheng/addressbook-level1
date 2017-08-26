@@ -711,7 +711,16 @@ public class AddressBook {
         }
 
         showToUser(String.format(MESSAGE_ERROR_MISSING_STORAGE_FILE, filePath));
+        createFile(filePath, storageFile);
+    }
 
+    /**
+     * Creates storage file. Exit program if exception encountered.
+     *
+     * @param filePath location of new file to be created
+     * @param storageFile assist in creation of new storage file
+     */
+    private static void createFile(String filePath, File storageFile) {
         try {
             storageFile.createNewFile();
             showToUser(String.format(MESSAGE_STORAGE_FILE_CREATED, filePath));
