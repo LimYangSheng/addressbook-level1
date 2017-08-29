@@ -80,6 +80,18 @@ oldest first.
 
 Format: `list`  
 
+#### Editing details of a person: `edit`
+> Edits the details of a person, specified by the index, in the address book. Details changes to
+the parameter stated in the command args
+
+Format: `edit INDEX NAME p/PHONE_NUMBER e/EMAIL`  
+> Words in `UPPER_CASE` are the parameters<br>
+  Phone number and email can be in any order but the name must come first.
+
+Examples: 
+* `edit 1 John Doe p/98765432 e/johnd@gmail.com`
+* `edit 2 Betsy Crowe e/bencrowe@gmail.com p/1234567 `
+
 #### Finding a person by keyword `find`
 > Finds persons that match given keywords
 
