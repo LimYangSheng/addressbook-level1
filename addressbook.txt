@@ -1,4 +1,4 @@
 Betsy Choo p/222222 e/benchoo@nus.edu.sg
-Charlie Dickson p/333333 e/charlie.d@nus.edu.sg
+john p/12345556 e/jfguia@gmail.com
 Dickson Ee p/444444 e/dickson@nus.edu.sg
 Esther Potato p/555555 e/esther@notreal.potato

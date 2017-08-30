@@ -462,8 +462,11 @@ public class AddressBook {
     private static String executeEditPerson(String commandArgs) {
         // remove index from commandArgs
         final String index = commandArgs.split(" ", 2)[0].trim();
-        commandArgs = commandArgs.split(" ", 2)[1].trim();
-
+        try {
+            commandArgs = commandArgs.split(" ", 2)[1].trim();
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return getMessageForInvalidCommandInput(COMMAND_EDIT_WORD, getUsageInfoForEditCommand());
+        }
         // try decoding a person from the raw args
         final Optional<String[]> decodeResult = decodePersonFromString(commandArgs);
 
